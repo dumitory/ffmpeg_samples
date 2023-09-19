@@ -39,7 +39,10 @@ int main(int argc, char** argv)
 	int res = avformat_open_input(&fmt_ctx, file_name, NULL, NULL);
 
 	if (res != 0)
-		return res;
+	{
+		    return res;
+	}
+		
 
 	/*
 		Read packets of a media file to get stream information.
