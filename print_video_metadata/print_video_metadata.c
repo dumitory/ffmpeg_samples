@@ -63,7 +63,9 @@ int main(int argc, char** argv)
 		streams, container, programs, metadata, side data, codec and time base.
 	*/
 	for (int i = 0; i < fmt_ctx->nb_streams; ++i)
+	{	
 		av_dump_format(fmt_ctx, i, file_name, 0);
+	}
 
 	avformat_close_input(&fmt_ctx);
 	return 0;
