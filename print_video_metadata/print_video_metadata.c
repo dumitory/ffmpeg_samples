@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 		return 0;
 	}
 
-	const char* file_name = argv[1]; //file name 
+	const char* file_name = argv[1]; // file name 
 
 	/*
 		When using FFMPEG for development,
